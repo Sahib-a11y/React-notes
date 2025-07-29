@@ -1,12 +1,12 @@
-import React, {useState ,useContext} from "react";
+import React, {useContext} from "react";
 import UserContext from "../Context/UserContext";
 
 function Profile(){
-    const{user} = useContext(useContext)
+    const{user} = useContext(UserContext)
 
     if(!user) return <div>Please Login</div>
     return(
-        <div>Welcome{user.username}</div>
+        <div>Welcome: {user.username}</div>
     )
 }
 
