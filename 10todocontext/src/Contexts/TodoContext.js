@@ -1,7 +1,7 @@
 import { useContext, createContext } from "react";
 
 
-export const todoContext = createContext({
+export const TodoContext = createContext({
     todos:[
         {
             id:1,
@@ -16,7 +16,7 @@ export const todoContext = createContext({
 })   //todocontext create kraa or export krr diyaa.
 
 export const Usetodo = () => {    
-    return useContext(todoContext)  // yaha usetodo naam ka hook bna ke usecontext mein todoContext export krr diya 
+    return useContext(TodoContext)  // yaha usetodo naam ka hook bna ke usecontext mein todoContext export krr diya 
 }
 
-export const todoprovider = todoContext.Provider   //yaha todoprovider hook mein provider ka access de ke export mr diyaa ki hmee provider na likhna phdee. 
+export const Todoprovider = TodoContext.Provider   //yaha todoprovider hook mein provider ka access de ke export mr diyaa ki hmee provider na likhna phdee. 
